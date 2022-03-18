@@ -44,7 +44,9 @@ describe 'A tile' do
 
     context 'when down' do
       it 'shows a space within brackets' do
-        skip
+        tile.flip
+        expect(tile.up?).to be_falsey
+        expect(tile.to_s).to eq '[ ]'
       end
     end
   end
