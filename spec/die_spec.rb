@@ -19,7 +19,8 @@ describe 'A die' do
     end
 
     it 'can be created with a custom number of sides' do
-      skip
+      custom_die = Die.new(303)
+      expect(custom_die.number_of_sides).to eq 303
     end
   end
 
