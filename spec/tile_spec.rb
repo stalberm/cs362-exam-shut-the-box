@@ -25,7 +25,11 @@ describe 'A tile' do
     end
 
     it 'stays down despite being flipped more than once' do
-      skip
+      expect(tile.up?).to be_truthy
+      tile.flip
+      expect(tile.up?).to be_falsey
+      tile.flip
+      expect(tile.up?).to be_falsey
     end
 
   end
