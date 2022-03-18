@@ -1,10 +1,10 @@
 require_relative '../lib/box'
 
 describe 'A box' do
-
+  let (:box) { Box.new }
   describe 'attributes' do
     it 'has tiles' do
-      skip
+      expect(box).to respond_to(:tiles)
     end
   end
 
