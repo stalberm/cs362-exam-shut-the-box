@@ -1,11 +1,12 @@
 require_relative '../lib/tile'
 
 describe 'A tile' do
+  let (:tile) { Tile.new(1) }
 
   describe 'attributes' do
 
     it 'has a value' do
-      skip
+      expect(tile).to respond_to(:value)
     end
 
   end
