@@ -37,7 +37,8 @@ describe 'A tile' do
   describe '#to_s string representation' do
     context 'when up' do
       it 'shows its value within brackets' do
-        skip
+        expect(tile.up?).to be_truthy
+        expect(tile.to_s).to eq "[#{tile.value}]"
       end
     end
 
